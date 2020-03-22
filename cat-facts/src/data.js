@@ -1,5 +1,9 @@
 const catFacts = [
   {
+    text: "",
+    id: 0
+  },
+  {
     text:
       "Blackie became the richest cat in history when he inherited 15 million British Pounds.",
     id: 1
