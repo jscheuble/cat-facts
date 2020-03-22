@@ -1,3 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
 .App {
   text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  transition: 0.5s;
+  background: #ffc0cb;
+}
+
+.fetch-btn {
+  margin-top: 8%;
+  padding: 0.5% 1%;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.fetch-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.fact {
+  font-size: 1.7rem;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  width: 80%;
+  margin: 5% auto;
 }

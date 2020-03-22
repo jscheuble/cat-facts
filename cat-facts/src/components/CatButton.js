@@ -16,7 +16,9 @@ const CatButton = () => {
   };
   return (
     <div>
-      <button onClick={handleFetch}>Fetch Fact</button>
+      <button className="fetch-btn" onClick={handleFetch}>
+        Fetch Random Cat Fact
+      </button>
     </div>
   );
 };

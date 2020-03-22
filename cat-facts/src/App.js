@@ -1,4 +1,5 @@
 import React from "react";
+import "./normalize.css";
 import "./App.css";
 
 import { createStore } from "redux";
@@ -14,7 +15,6 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <h1>cat facts</h1>
         <CatButton />
         <CatFact />
       </div>
