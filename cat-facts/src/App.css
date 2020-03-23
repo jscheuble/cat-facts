@@ -8,12 +8,39 @@
 
 body {
   transition: 0.5s;
-  background: #ffc0cb;
+  background: #20b2aa;
+}
+
+nav {
+  margin-top: 2.5%;
+}
+
+nav a {
+  font-size: 1.8rem;
+  margin: 5%;
+  text-decoration: none;
+  color: #000;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.home-img {
+  width: 60%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 .fetch-btn {
   margin-top: 8%;
-  padding: 0.5% 1%;
+  padding: 2%;
   background: transparent;
   border: 2px solid white;
   border-radius: 5px;
@@ -30,5 +57,5 @@ body {
   letter-spacing: 1.5px;
   font-weight: bold;
   width: 80%;
-  margin: 5% auto;
+  margin: 9% auto;
 }
