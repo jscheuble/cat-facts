@@ -1,10 +1,12 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
     <nav>
-      <Link to="/">Home</Link>
+      <NavLink exact activeClassName="active" to="/">
+        Home
+      </NavLink>
       <NavLink activeClassName="active" to="/random">
         Random
       </NavLink>
