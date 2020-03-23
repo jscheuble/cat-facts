@@ -34,7 +34,7 @@ export const catReducer = (state = initialState, action) => {
         ...state,
         fact: {
           ...state.fact,
-          isFavorite: false
+          isFavorite: !state.fact.isFavorite
         },
         favorites: state.favorites.filter(e => {
           return e.id !== action.payload;
