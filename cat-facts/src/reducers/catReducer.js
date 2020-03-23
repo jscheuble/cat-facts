@@ -1,6 +1,6 @@
 import catFacts from "../data";
 
-import { FETCH_FACT, ADD_FAVORITE } from "../actions/index";
+import { FETCH_FACT, ADD_FAVORITE, REMOVE_FAVORITE } from "../actions/index";
 
 const initialState = {
   catFacts: catFacts,
@@ -18,16 +18,27 @@ export const catReducer = (state = initialState, action) => {
     case FETCH_FACT:
       return {
         ...state,
-        fact: catFacts[Math.floor(Math.random() * catFacts.length + 1)]
+        fact: catFacts[Math.floor(Math.random() * catFacts.length)]
       };
     case ADD_FAVORITE:
       return {
         ...state,
         fact: {
           ...state.fact,
-          isFavorite: !state.isFavorite
+          isFavorite: true
         },
         favorites: [...state.favorites, catFacts[action.payload - 1]]
+      };
+    case REMOVE_FAVORITE:
+      return {
+        ...state,
+        fact: {
+          ...state.fact,
+          isFavorite: false
+        },
+        favorites: state.favorites.filter(e => {
+          return e.id !== action.payload;
+        })
       };
     default:
       return state;

@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { addFavorite } from "../actions/index";
+import { addFavorite, removeFavorite } from "../actions/index";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as star } from "@fortawesome/free-regular-svg-icons";
@@ -19,7 +19,11 @@ const CatFact = () => {
         <p className="favorites">
           Add to Favorites{" "}
           {isFavorite ? (
-            <FontAwesomeIcon icon={starFilled} className="star" />
+            <FontAwesomeIcon
+              icon={starFilled}
+              className="star"
+              onClick={() => dispatch(removeFavorite(fact.id))}
+            />
           ) : (
             <FontAwesomeIcon
               icon={star}

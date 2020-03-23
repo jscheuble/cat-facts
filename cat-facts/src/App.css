@@ -63,3 +63,19 @@ h3 {
 .favorites {
   font-size: 1.5rem;
 }
+
+.saved-favorites {
+  width: 80%;
+  margin: 2% auto;
+  font-size: 1.6rem;
+}
+
+.fav {
+  display: flex;
+  align-items: center;
+}
+
+.trash {
+  transform: translateY(-5%);
+  margin-right: 3%;
+}
