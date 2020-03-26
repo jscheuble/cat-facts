@@ -1,3 +1,3 @@
 # cat-facts
 
-Simple React app that generates random cat facts using Redux.
+Simple React app that generates random cat facts using React Redux.
